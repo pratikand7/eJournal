@@ -1,0 +1,90 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+#dashboard-form{
+  display: flex;
+  flex-direction: column;
+}
+
+#dashboard-form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#dashboard-form input[type="date"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+#data{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 200px;
+  }
+
+#dashboard-form button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    align-items: center;
+  }
+  
+  #dashboard-form button:disabled {
+    background-color: #ccc;
+  }
+  
+  #dashboard-form button:hover:enabled {
+    background-color: #0056b3;
+  }
+
+#journal{
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+    background-color: white;
+    border: 1px,solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    position: absolute;
+    right: 33%;
+    text-decoration: none;
+}
+
+#logout{
+    padding: 8px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(234, 82, 82);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    margin-left: 165px;
+    justify-content: right;
+}
+
+  
