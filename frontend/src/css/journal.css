@@ -123,7 +123,6 @@ h1 {
 
 .menu {
   background-color: none;
-  width: 0%;
   height: 45vh;
   transition: all 0.4s ease;
   position: absolute;
@@ -132,17 +131,18 @@ h1 {
 
 .toggler:checked ~ .menu {
   width: 10%;
-
 }
 
 .menu > div > ul {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 60px;
+  top: 55px;
   padding-left: 10px;
   visibility: hidden;
-  background-color: #333;
+  background-color: white;
+  border-radius: 10px;
+  right: 1px;
 }
 
 .menu > div > ul > li {
@@ -151,15 +151,15 @@ h1 {
 }
 
 .menu > div > ul > li > a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1.5rem;
 }
 
 .menu > div > ul > li > button {
-  color: #333;
-  background-color: white;
-  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(228, 49, 49);
+  font-size: 1.2rem;
   border: rgb(228, 49, 49) solid 1px;
   border-radius: 5px;
 }

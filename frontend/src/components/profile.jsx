@@ -24,8 +24,6 @@ const Profile = ({token}) => {
         fetchUserData();
       }, [token]);
     
-    // if (loading) return <p>Loading user data...</p>;
-    
     return (
         <>
         <div className="container">

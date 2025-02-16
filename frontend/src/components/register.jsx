@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
-import '../css/register.css';
 import {ToastContainer, toast} from 'react-toastify';
 
 const Register = () => {
@@ -42,7 +41,7 @@ const Register = () => {
           <a href='/'>eJournal</a>
         </div>
       </nav>
-    <form id='reg-form' onSubmit={handleSubmit}>
+    <form id='log-form' onSubmit={handleSubmit}>
       <h1>Register Here!</h1>
       <input
         type="text"

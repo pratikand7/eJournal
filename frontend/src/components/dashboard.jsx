@@ -64,7 +64,7 @@ const Dashboard = ({ token }) => {
           <div>
             <ul>
               <li>
-                <a href="/profile">Profile</a>
+                <a href="/profile" ><img id="profile" src="icons8-male-user-48.png"></img>Profile</a>
               </li>
               <li>
                 <button onClick={handleClick}>Logout</button>
@@ -80,23 +80,27 @@ const Dashboard = ({ token }) => {
         </div>
         <form id="dashboard-form" onSubmit={handleSubmit}>
           <div>
-            <label>Date:</label>
+            <label>Date : </label>
             <input
               type="date"
               value={date}
               onChange={(e) => setDate(e.target.value)}
               required
             />
+            
           </div>
           <div>
             <label>How was your day?</label>
-            <input
+            {/* <input
               id="data"
               type="text"
               value={body}
               onChange={(e) => setBody(e.target.value)}
               required
-            />
+            /> */}
+            <textarea id="data" 
+            value={body}
+            onChange={(e)=> setBody(e.target.value)} ></textarea>
           </div>
           <div>
             <button id="" type="submit">
