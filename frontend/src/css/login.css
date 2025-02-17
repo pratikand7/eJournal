@@ -1,3 +1,4 @@
+
 #log-form {
     margin: 20px auto;
     width: 343px;
@@ -39,16 +40,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 5px;
     background-color: #333;
     color: white;
     height: 50px;
   }
   
   #navbar .logo a {
-    font-size: 24px;
+    font-size: 40px;
     color: white;
     text-decoration: none;
   }
-  
-  
+  #navbar .logo a:hover{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+

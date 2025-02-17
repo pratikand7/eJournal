@@ -4,7 +4,6 @@ import Register from './components/register';
 import Login from './components/login';
 import Dashboard from './components/dashboard';
 import Journal from './components/journal';
-import Profile from './components/profile';
 
 const App = () => {
   const [token, setToken] = useState(localStorage.getItem("token") || null);
@@ -24,7 +23,6 @@ const App = () => {
         <Route path="/" element={<Login setToken={setToken} />} />
         <Route path="/dashboard" element={<Dashboard token={token} />} />
         <Route path="/journal" element={<Journal token={token} />} />
-        <Route path="/profile" element={<Profile token={token} />} />
       </Routes>
     </Router>
   );

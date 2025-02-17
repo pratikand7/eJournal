@@ -56,21 +56,8 @@ const Dashboard = ({ token }) => {
         <div class="logo">
           <a href="/">eJournal</a>
         </div>
-        <input type="checkbox" className="toggler"></input>
-        <div className="hamburger">
-          <div></div>
-        </div>
-        <div className="menu">
-          <div>
-            <ul>
-              <li>
-                <a href="/profile" ><img id="profile" src="icons8-male-user-48.png"></img>Profile</a>
-              </li>
-              <li>
-                <button onClick={handleClick}>Logout</button>
-              </li>
-            </ul>
-          </div>
+        <div>
+          <button onClick={handleClick}><img src="icons/icons8-logout-50.png" alt="" /> </button>
         </div>
       </nav>
 
@@ -91,13 +78,6 @@ const Dashboard = ({ token }) => {
           </div>
           <div>
             <label>How was your day?</label>
-            {/* <input
-              id="data"
-              type="text"
-              value={body}
-              onChange={(e) => setBody(e.target.value)}
-              required
-            /> */}
             <textarea id="data" 
             value={body}
             onChange={(e)=> setBody(e.target.value)} ></textarea>

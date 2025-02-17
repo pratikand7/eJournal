@@ -32,7 +32,7 @@ const Login = ({ setToken }) => {
           <a href="/">eJournal</a>
         </div>
       </nav>
-
+        
       <form id="log-form" onSubmit={handleSubmit}>
         <h1>Login Here!</h1>
         <input

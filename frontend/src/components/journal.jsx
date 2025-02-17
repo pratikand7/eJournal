@@ -47,19 +47,6 @@ const Journal = ({ token }) => {
     }
   }, [key, token]);
 
-  const handleDelete = async (id) => {
-    console.log(id);
-    try {
-      await axios.delete(`${process.env.REACT_APP_BASE_URL}/journals/${id}`, {
-        headers: { Authorization: token },
-      });
-      setJournals(journals.filter((journal) => journal._id !== id));
-      toast("Journal deleted successfully.");
-    } catch (err) {
-      alert("Failed to delete journal. Please try again.");
-    }
-  };
-
   const handleClick = () => {
     localStorage.removeItem("token");
     toast("You have been logged out.");
@@ -74,34 +61,18 @@ const Journal = ({ token }) => {
         <div class="logo">
           <a href="/">eJournal</a>
         </div>
-        <input type="checkbox" className="toggler"></input>
-        <div className="hamburger">
-          <div></div>
-        </div>
-        <div className="menu">
-          <div>
-            <ul>
-              <li>
-                <a href="/profile">Profile</a>
-              </li>
-              <li>
-                <button onClick={handleClick}>Logout</button>
-              </li>
-            </ul>
-          </div>
+        <div>
+          <button onClick={handleClick}><img src="icons/icons8-logout-50.png" alt="" /> </button>
         </div>
       </nav>
       <div className="journals-container">
         <a href="/dashboard">
-          <img className="back" src="icons8-back-64.png" alt="" />
+          <img className="back" src="icons/icons8-back-64.png" alt="" />
         </a>
         <h1>Your Journals</h1>
         {journals.length > 0 ? (
           journals.map((journal) => (
             <div className="journal-card" key={journal._id}>
-              <button id="delete" onClick={() => handleDelete(journal._id)}>
-                Delete
-              </button>
               <h3>Date: {new Date(journal.date).toLocaleDateString()}</h3>
               <p>Text: {journal.body}</p>
             </div>
